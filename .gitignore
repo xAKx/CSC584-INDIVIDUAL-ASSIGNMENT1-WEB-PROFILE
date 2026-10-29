@@ -1,0 +1,12 @@
+# NetBeans generated files
+/nbproject/private/
+/build/
+/dist/
+
+# GlassFish and temporary files
+*.log
+*.tmp
+
+# Operating system files
+.DS_Store
+Thumbs.db
