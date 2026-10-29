@@ -5,7 +5,7 @@ and open the template in the editor.
 */
 /* 
     Created on : Oct 29, 2026, 3:37:45 PM
-    Updated  on: Oct29, 2026 4:19 PM
+    Updated  on: Oct29, 2026 8:31 PM
     Author     : akmal
 */
 
@@ -160,4 +160,3 @@ button:active { background: #102d21; }
 @media (max-width: 370px) {
     .profile-details { grid-template-columns: minmax(0, 1fr); }
 }
-
