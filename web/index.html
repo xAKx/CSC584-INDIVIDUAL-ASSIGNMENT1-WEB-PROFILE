@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A little space to introduce yourself. Create your personal student profile with Mintfolio.">
+    <title>A little space for you</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#profile-form">Skip to profile form</a>
+    <header class="site-header">
+        <a class="wordmark" href="index.html" aria-label="Mintfolio home"><span class="brand-mark" aria-hidden="true">m</span>mintfolio<span class="brand-dot">.</span></a>
+        <span class="header-note">YOUR LITTLE CORNER OF THE WEB</span>
+    </header>
+    <main class="layout">
+        <section class="intro" aria-labelledby="welcome-title">
+            <p class="eyebrow"><span aria-hidden="true">✳</span> THE BEGINNING OF YOUR STORY</p>
+            <h1 id="welcome-title">Hello,<br><em>you.</em></h1>
+            <p class="intro-copy">A name, a few favourites, a little personality. Every story starts somewhere. Let’s start with yours.</p>
+            <div class="story-art" aria-hidden="true">
+                <div class="orbit"></div>
+                <div class="profile-note"><span class="note-label">A LITTLE SNAPSHOT OF</span><span class="note-you">you.</span><span class="note-line"></span><span class="note-line short"></span><span class="note-tag">one of a kind</span></div>
+                <span class="art-flower">✳</span><span class="art-spark">✧</span>
+                <span class="art-caption">a small introduction,<br>a whole lot of possibility.</span>
+            </div>
+            <p class="intro-footnote">PERSONAL PROFILE <span aria-hidden="true">/</span> CSC584</p>
+        </section>
+        <section class="form-card" aria-labelledby="form-title">
+            <div class="form-heading"><span class="section-number">01 / ABOUT YOU</span><span class="small-flower" aria-hidden="true">✳</span></div>
+            <h2 id="form-title">Make yourself known.</h2>
+            <p class="form-description">Tell us a little about yourself. All fields are required.</p>
+            <form id="profile-form" method="POST" action="ProfileServlet" accept-charset="UTF-8">
+                <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" maxlength="100" required></div>
+                <div class="field-row">
+                    <div class="field"><label for="studentId">Student ID</label><input id="studentId" name="studentId" type="text" inputmode="numeric" placeholder="e.g. 2026123456" maxlength="30" required></div>
+                    <div class="field"><label for="programme">Programme</label><input id="programme" name="programme" type="text" placeholder="e.g. CS230" maxlength="150" required></div>
+                </div>
+                <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required></div>
+                <div class="field"><label for="hobbies">Your hobbies</label><input id="hobbies" name="hobbies" type="text" placeholder="Coding, gaming, photography…" aria-describedby="hobbies-hint" maxlength="300" required><p class="field-hint" id="hobbies-hint">The things you love doing. Separate them with commas.</p></div>
+                <div class="field"><label for="introduction">Short self-introduction</label><textarea id="introduction" name="introduction" rows="4" placeholder="What makes you, you? Share a little bit of your story…" aria-describedby="introduction-hint" maxlength="1000" required></textarea><p class="field-hint" id="introduction-hint">A few sentences is a lovely place to start. Up to 1,000 characters.</p></div>
+                <div class="form-actions"><p>A little introduction.<br>A profile that feels like you.</p><button type="submit">Create my profile <span aria-hidden="true">↗</span></button></div>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer"><p>Made with a little curiosity and a lot of mint.</p><span>Mintfolio <span aria-hidden="true">✳</span> A little space for you.</span></footer>
+</body>
 </html>
